@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Reproductor de m&uacute;sica</title>
+			<link rel="stylesheet" type="text/css" href="stylesheets/reproductor.css">
+			<script type="text/javascript" src="javascripts/jquery/jquery-1.11.2.min.js"></script>
+			<script type="text/javascript" src="javascripts/reproductor.js"></script>
+	</head>
+	<body>
+      <header>Práctica DLNA</header>
+		<section>
+			<div id="divReproductor">
+				<div id="divInfo">
+					<div id="divLogo">
+						<img src="images/logo.png" align="left">
+					</div>
+					<div id="divInfoCancion">
+						<label id="lblCancion"><strong>Nombre: </strong><span>-</span></label>
+						<label id="lblArtista"><strong>Artista: </strong><span>-</span></label>
+						<label id="lblDuracion"><strong>Duraci&oacute;n: </strong><span>-</span></label>
+						<label id="lblEstado"><strong>Transcurrido: </strong><span>-</span></label>
+					</div>
+					<div style="clear: both"></div>
+				</div>
+				<div id="divLista">
+					<ol id="olCanciones">
+						<li rel="/canciones/AcousticFunk.mp3"> <strong>AcousticFunk</strong><em>Artista 1</em></li>
+						<li rel="/canciones/BeBop25.mp3"> <strong>BeBop25</strong><em>Artista 2</em></li>
+						<li rel="/canciones/BoogieWoogieBed.mp3"> <strong>BoogieWoogieBed</strong><em>Artista 3</em></li>
+						<li rel="/canciones/HotSalsa.mp3"> <strong>HotSalsa</strong><em>Artista 4</em></li>
+						<li rel="/canciones/RubixCube.mp3"> <strong>RubixCube</strong><em>Artista 5</em></li>
+					</ol>
+
+				</div>
+                <div id="divProgreso">
+					<div id="divBarra"></div>
+				</div>
+                <div id="divControles">
+                <div data-role="controlgroup" data-type="horizontal">
+					<button data-inline="true"  id="btnReproducir" title="Reproducir"/>
+                    <button data-inline="true"  id="btnAnterior" title="Anterior"/>
+					<button data-inline="true"  id="btnSiguiente" title="Siguiente"/>
+					<button data-inline="true"  id="btnPausar" title="Pausar/Continuar"/>
+                 </div>
+                 <div data-role="controlgroup" data-type="horizontal">
+					<button data-inline="true"  id="btnSubirVolumen" title="Subir volumen"/>
+					<button data-inline="true"  id="btnBajarVolumen" title="Bajar volumen"/>
+					<button data-inline="true"  id="btnSilencio" title="Silencio"/>
+					<button data-inline="true"  id="btnRepetir" title="Repetir"/>
+                 </div>
+				</div>
+			</div>
+		</section>
+      <footer><p>Universidad del Cauca </br>FIET - 2015</p></footer>
+	</body>
+</html>

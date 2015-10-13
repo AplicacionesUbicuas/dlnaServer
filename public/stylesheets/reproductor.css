@@ -1,0 +1,144 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font: normal 12px Tahoma, Verdana, Arial, sans-serif;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a690a+0,0a0a32+98&amp;0.65+99,0.65+99 */
+background: -webkit-linear-gradient(rgba(10,105,10,0.65) 0%, rgba(10,10,50,0.65) 98%, rgba(10,10,50,0.65) 99%);
+background: -o-linear-gradient(rgba(10,105,10,0.65) 0%, rgba(10,10,50,0.65) 98%, rgba(10,10,50,0.65) 99%);
+background: linear-gradient(rgba(10,105,10,0.65) 0%, rgba(10,10,50,0.65) 98%, rgba(10,10,50,0.65) 99%); /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */ /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a60a690a', endColorstr='#a60a0a32',GradientType=0 ); /* IE6-9 */
+background-repeat: no-repeat;
+
+}
+
+section{
+	margin: 75px 0px;
+}
+
+header{
+	color: #ccc;
+	font-size: 1.5em;
+	/*margin: 25px 300px 0px 300px;*/
+	text-align: center;
+}
+footer{
+	text-align: center;
+	color: #ccc;
+	font-size: 1.5em;
+/*	margin: 10px 300px 0px 300px;*/
+}
+a{
+	color: #f00;
+}
+button{
+	width: 64px;
+	height: 64px;
+	margin: 2px;
+	border: solid 1px #f1f1f1;
+	background: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+}
+	button:hover{
+		border-color: #FF7E8A;
+	}
+	button.clsSeleccionado{
+		border-color: #21BFF2;
+	}
+#divContenedor{
+	margin: 0 auto;
+	margin-top: 20px;
+}
+	#divReproductor{
+		border: solid 1px #ccc;
+		box-shadow: 0 0 10px #ccc;
+		border-radius: 5px;
+		background: #fff;
+	}
+		#divInfo{
+			padding: 5px;
+			padding-top: 15px;
+		}
+			#divLogo{
+				text-align: center;
+				display: inline-block;
+				padding-left: 10px;
+			}
+			#divInfoCancion{
+				text-align: left;
+				display: inline-block;
+				vertical-align: top;
+				border-radius: 3px;
+				padding: 10px;
+				margin-left: 20px;
+			}
+				#divInfoCancion label{
+					display: block;
+				}
+					#divInfoCancion label strong{
+						width: 100px;
+						display: inline-block;
+					}
+		#divControles{
+			text-align: center;
+		}
+			#btnReproducir{background: url(/images/play.png) center no-repeat; width:50px;height:50px;}
+			#btnPausar{background: url(/images/pause.png) center no-repeat;width:50px;height:50px;}
+			#btnSiguiente{background: url(/images/forward.png) center no-repeat;width:50px;height:50px;}
+			#btnAnterior{background: url(/images/back.png) center no-repeat;width:50px;height:50px;}
+			#btnSilencio{background: url(/images/mute.png) center no-repeat;width:50px;height:50px;}
+			#btnSubirVolumen{background: url(/images/up.png) center no-repeat;width:50px;height:50px;}
+			#btnBajarVolumen{background: url(/images/down.png) center no-repeat;width:50px;height:50px;}
+			#btnRepetir{background: url(/images/repeat.png) center no-repeat;width:50px;height:50px;}
+		#divProgreso{
+			height: 15px;
+			margin: 10px;
+			border: inset 1px #f1f1f1;
+			border-radius: 3px;
+			overflow: hidden;
+		}
+			#divBarra{
+				width: 0;
+				height: 100%;
+				background: #CC0013;
+				border-right: solid 2px #f00;
+			}
+		#divLista{
+			padding: 5px;
+			overflow-x: auto;
+			height: 150px;
+			color: #777;
+			font-size: 11px;
+		}
+			#divLista ol{
+				list-style-type: none;
+				padding-left: 10px;
+			}
+				#divLista ol li{
+					border-bottom: dashed 1px #f1f1f1;
+					padding: 5px;
+					cursor: pointer;
+					border-radius: 3px;
+				}
+					#divLista ol li:hover{
+						background: #CC0013;
+						color: #fff;
+						text-shadow: 1px 1px 1px #000;
+					}
+					#divLista ol li.clsSeleccionado{
+						background: #21BFF2;
+						color: #fff;
+						text-shadow: 1px 1px 1px #000;
+					}
+					#divLista ol li:last-child{
+						border-bottom: none;
+					}
+					#divLista ol li strong{
+						display: block;
+					}
+					#divLista ol li em{
+						display: block;
+						font-style: normal;
+					}
